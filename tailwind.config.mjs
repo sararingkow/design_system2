@@ -60,33 +60,35 @@ export default {
 
     /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
     fontFamily: {
-      sans: ["Prompt", "sans-serif"],
-      display: ["Courier", "monospace"] /* eksempel på ekstra font */,
+      almarai: ["Almarai", "sans-serif"],
+      exo: ["Exo", "sans-serif"],
     },
 
     /* Tilføj dit typografiske hierarki herunder */
-    // fontSize: {
-    //     base: ['1rem', { lineHeight: '1.5rem' }],
-    //     large: ['2.5rem', { lineHeight: '3.75rem' }],
-    //   },
+    fontSize: {
+      base: ["1rem", { lineHeight: "1.5rem" }],
+      large: ["2.5rem", { lineHeight: "3.75rem" }],
+    },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
-    //   fontWeight: {
-    //     regular: '400',
-    //   },
+    fontWeight: {
+      regular: "400",
+      medium: "500",
+      bold: "700",
+      extrabold: "900",
+    },
 
     /* Borders - borderstørrelser herunder */
-    // borderWidth: {
-    //     DEFAULT: '1px',
-    //     0: '0px',
-    //     2: '2px',
-    // },
+    borderWidth: {
+      DEFAULT: "1px",
+      0: "0px",
+    },
 
     /* Border radius størrelser herunder */
-    // borderRadius: {
-    //     DEFAULT: '1.25rem',
-    //     none: '0px',
-    // },
+    borderRadius: {
+      DEFAULT: "8px",
+      none: "0px",
+    },
 
     /* Box shadows herunder */
     // boxShadow: {
