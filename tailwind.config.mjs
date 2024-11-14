@@ -69,7 +69,8 @@ export default {
       base: ["1rem", { lineHeight: "1.5rem" }],
       small: ["0.875rem", { lineHeight: "1.25rem" }],
       medium: ["1.125rem", { lineHeight: "1.75rem" }],
-      large: ["2.5rem", { lineHeight: "3.75rem" }],
+      large: ["1.5rem", { lineHeight: "2rem" }],
+      xlarge: ["2.5rem", { lineHeight: "3.75rem" }],
     },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
