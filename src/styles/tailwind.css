@@ -3,13 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-  /* p{
-        @apply text-body;
-    } */
-
   h1,
   h2 {
     @apply font-exo;
     @apply font-bold;
+  }
+
+  h3 {
+    @apply font-almarai;
+    @apply font-bold;
+  }
+
+  p {
+    @apply font-almarai;
+    @apply font-regular;
   }
 }

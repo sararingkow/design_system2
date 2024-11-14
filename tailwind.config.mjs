@@ -67,13 +67,15 @@ export default {
     /* Tilføj dit typografiske hierarki herunder */
     fontSize: {
       base: ["1rem", { lineHeight: "1.5rem" }],
+      small: ["0.875rem", { lineHeight: "1.25rem" }],
+      medium: ["1.125rem", { lineHeight: "1.75rem" }],
       large: ["2.5rem", { lineHeight: "3.75rem" }],
     },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
     fontWeight: {
+      light: "300",
       regular: "400",
-      medium: "500",
       bold: "700",
       extrabold: "900",
     },
@@ -91,9 +93,12 @@ export default {
     },
 
     /* Box shadows herunder */
-    // boxShadow: {
-    //     drop25: '4px 4px 4px 0 rgb(0 0 0 / 0.25)', /* x y blur spread farve / opacity */
-    // },
+    boxShadow: {
+      sm: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      md: "0 4px 6px -1px rgb(0 0 0 / 0.1)",
+      lg: "0 4px 6px -4px rgb(0 0 0 / 0.1)",
+      xl: "0 8px 10px -6px rgb(0 0 0 / 0.1)",
+    },
 
     extend: {
       /* Tilføj din egen farvepalette nedenfor */

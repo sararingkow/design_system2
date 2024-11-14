@@ -9,44 +9,43 @@ import thumbsup from "../assets/images/thumbsup.png";
 <MainLayout title="Titel">
   <article class="max-w-screen-xl mx-auto">
     <div class="prose">
-      <h1 class="text-xlarge">Design system!</h1>
-      <p>
-        Tailwind konfigureret til at følge Birgittes <a
-          href="
-https://www.figma.com/design/GK1F375GejhwIkOHADf6Rn/Dansestudiet_html_to_css-%2B-designsystem?node-id=6806-2&t=9pE0OOaxiPeTTIVG-1"
-          >design system</a
-        >
-      </p>
+      <h1 class="text-xlarge mt-sm">Design system!</h1>
+      <h2 class="text-medium font-light mt-sm">Lavet efter design-systemet til egen portfolio</h2>
+      <hr class="my-lg" />
     </div>
     <section>
       <h2 class="text-large font-semibold mt-lg">Typografi</h2>
-      <h3 class="text-small font-semibold mt-sm">Størrelse</h3>
+      <h3 class="text-medium mb-sm">Størrelse</h3>
       <div class="flex flex-col [&>p]:place-content-center gap-xxs max-w-9xl">
-        <p>Brødtekst</p>
-        <p class="">
+        <p class="font-light">Brødtekst</p>
+        <p class="text-regular">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum, minima molestias doloribus excepturi ab reprehenderit placeat
           dignissimos quia ratione deserunt unde, similique, vitae fuga nulla veniam architecto quaerat. Maiores.
         </p>
-        <p>Konsultativ tekst</p>
-        <p class="text-konsultativ">
+        <div class="pt-md"></div>
+        <p class="font-light">Konsultativ tekst</p>
+        <p class="text-base">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum, minima molestias doloribus excepturi ab reprehenderit placeat
           dignissimos quia ratione deserunt unde, similique, vitae fuga nulla veniam architecto quaerat. Maiores.
         </p>
+        <div class="pt-md"></div>
         <p class="text-small">Small</p>
-        <p class="text-medium">Medium</p>
+        <p class="text-base">Base</p>
+        <p class="text-medium">Regular</p>
         <p class="text-large">Large</p>
-        <p class="text-xlarge">Xlarge</p>
       </div>
-      <h3 class="text-small font-semibold mt-sm">Vægt</h3>
+      <h3 class="text-medium mt-md mb-sm">Vægt</h3>
       <div class="flex flex-col [&>p]:place-content-center gap-xxs">
         <p class="font-light">Light</p>
         <p class="font-regular">Regular</p>
-        <p class="font-semibold">Semibold</p>
+        <p class="font-bold">Bold</p>
+        <p class="font-extrabold">Extrabold</p>
       </div>
     </section>
+    <div class="pt-md"></div>
     <section>
-      <h2 class="text-large font-semibold mt-lg">Farver</h2>
-      <h3 class="text-small font-semibold mt-sm">Red</h3>
+      <h2 class="text-large font-semibold mt-lg mb-sm">Farver</h2>
+      <h3 class="text-small font-semibold">Red</h3>
       <div class="flex [&>p]:text-center [&>p]:place-content-center">
         <p class="w-lg h-lg bg-red-50">50</p>
         <p class="w-lg h-lg bg-red-100">100</p>
@@ -59,6 +58,7 @@ https://www.figma.com/design/GK1F375GejhwIkOHADf6Rn/Dansestudiet_html_to_css-%2B
         <p class="w-lg h-lg bg-red-800 text-neutral-50">800</p>
         <p class="w-lg h-lg bg-red-900 text-white">900</p>
       </div>
+      <div class="pt-md"></div>
       <h3 class="text-small font-semibold mt-sm">Blue</h3>
       <div class="flex [&>p]:text-center [&>p]:place-content-center">
         <p class="w-lg h-lg bg-blue-50">50</p>
@@ -72,6 +72,7 @@ https://www.figma.com/design/GK1F375GejhwIkOHADf6Rn/Dansestudiet_html_to_css-%2B
         <p class="w-lg h-lg bg-blue-800 text-neutral-50">800</p>
         <p class="w-lg h-lg bg-blue-900 text-white">900</p>
       </div>
+      <div class="pt-md"></div>
       <h3 class="text-small font-semibold mt-sm">Grey</h3>
       <div class="flex [&>p]:text-center [&>p]:place-content-center">
         <p class="w-lg h-lg bg-grey-50">50</p>
@@ -85,46 +86,47 @@ https://www.figma.com/design/GK1F375GejhwIkOHADf6Rn/Dansestudiet_html_to_css-%2B
         <p class="w-lg h-lg bg-grey-800 text-neutral-50">800</p>
         <p class="w-lg h-lg bg-grey-900 text-white">900</p>
       </div>
+      <div class="pt-md"></div>
     </section>
     <section>
-      <h2 class="text-large font-semibold mt-lg">Spacing</h2>
+      <h2 class="text-large font-semibold mt-lg mb-sm">Spacing</h2>
       <div class="flex flex-col [&>p]:text-center [&>p]:place-content-center gap-xxs">
-        <p class="w-xs h-lg bg-blue-300">xs</p>
-        <p class="w-sm h-lg bg-blue-300">sm</p>
-        <p class="w-md h-lg bg-blue-300">md</p>
-        <p class="w-lg h-lg bg-blue-300">lg</p>
+        <p class="w-xs h-lg bg-blue-300 mb-sm">xs</p>
+        <p class="w-sm h-lg bg-blue-300 mb-sm">sm</p>
+        <p class="w-md h-lg bg-blue-300 mb-sm">md</p>
+        <p class="w-lg h-lg bg-blue-300 mb-sm">lg</p>
         <p class="w-xl h-lg bg-blue-300">xl</p>
       </div>
     </section>
-
+    <div class="pt-md"></div>
     <section>
-      <h2 class="text-large font-semibold mt-lg">Borders</h2>
-      <h3 class="text-small font-semibold mt-sm">Border width</h3>
+      <h2 class="text-large font-semibold mt-lg mb-sm">Borders</h2>
+      <h3 class="text-small font-semibold mb-sm">Border width</h3>
       <div class="flex gap-xxs [&>p]:text-center [&>p]:place-content-center">
-        <p class="w-lg h-lg border-0 border-blue-500">0</p>
-        <p class="w-lg h-lg border border-blue-500">default</p>
+        <p class="w-lg h-lg border-0 border-blue-500 mr-sm">0</p>
+        <p class="w-lg h-lg border border-blue-500">Main</p>
       </div>
-      <h3 class="text-small font-semibold mt-sm">Border radius</h3>
+      <h3 class="text-small font-semibold mt-md mb-sm">Border radius</h3>
       <div class="flex gap-xxs [&>p]:text-center [&>p]:place-content-center">
-        <p class="w-4xl h-4xl border-0 border-blue-500 rounded-none">None</p>
-        <p class="w-4xl h-4xl border-2 border-blue-500 rounded">Default</p>
+        <p class="w-lg h-lg border-0 border-blue-500 rounded-none mr-sm">None</p>
+        <p class="w-lg h-lg border border-blue-500 rounded">Main</p>
       </div>
     </section>
-
+    <div class="pt-md"></div>
     <section>
-      <h2 class="text-large font-semibold mt-lg">Shadows</h2>
-      <h3 class="text-small font-semibold mt-sm">Border width</h3>
+      <h2 class="text-large font-semibold mt-lg mb-sm">Shadows</h2>
       <div class="flex gap-xxs [&>p]:text-center [&>p]:place-content-center">
-        <p class="w-32 h-lg border border-blue-500 shadow-drop25">Drop 25</p>
-        <p class="w-32 h-lg border border-blue-500 shadow-drop50">Drop 50</p>
-        <p class="w-32 h-lg border border-blue-500 shadow-inner25">Inner 25</p>
-        <p class="w-32 h-lg border border-blue-500 shadow-inner50">Inner 50</p>
+        <p class="w-32 h-lg border border-blue-500 shadow-sm mr-sm">sm</p>
+        <p class="w-32 h-lg border border-blue-500 shadow-md mr-sm">md</p>
+        <p class="w-32 h-lg border border-blue-500 shadow-lg mr-sm">lg</p>
+        <p class="w-32 h-lg border border-blue-500 shadow-xl mr-sm">xl</p>
       </div>
     </section>
-
+    <div class="pt-md"></div>
     <section>
       <h2 class="text-large font-semibold mt-lg">Card</h2>
       <h3 class="text-small font-semibold mt-sm">Kommer snart;-)</h3>
     </section>
+    <div class="pt-md"></div>
   </article>
 </MainLayout>
