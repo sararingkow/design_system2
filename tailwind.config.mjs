@@ -56,6 +56,14 @@ export default {
       md: "32px",
       lg: "40px",
       xl: "52px",
+      "2xl": "64px",
+      "3xl": "80px",
+      "4xl": "96px",
+      "5xl": "118px",
+      "6xl": "128px",
+      "7xl": "240px",
+      "8xl": "360px",
+      "9xl": "450px",
     },
 
     /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */

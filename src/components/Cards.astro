@@ -1,0 +1,60 @@
+---
+const {
+  url = "#",
+  cardimage = "'",
+  cardimagealt = "",
+  badgenyt = "false",
+  badgerabat = "false",
+  badgefaapladser = "false",
+  holdnavn = "",
+  tidspunkt = "",
+  aldersgruppe = "",
+  niveau = "",
+  pladserpaaholdet = "",
+  lokale = "",
+  holdbeskrivelse = "",
+  underviserfoto = "",
+  underviserfotoalt = "'",
+  undervisernavn = "",
+  underviserinfo = "",
+} = Astro.props;
+---
+
+<article class="card border-blue-700 border border-2 @container">
+  <a href={url} class="flex flex-col justify-between h-full">
+    <header class="danseholdheader mb-md relative">
+      <img src={cardimage} alt={cardimagealt} class="object-cover h-9xl w-full" />
+      {badgenyt == "true" && <div class="badge absolute top-[0rem] right-0 bg-[#00ff2a] text-white text-sm px-sm py-sm">{badgenyt}</div>}
+      {badgerabat == "true" && <div class="badge absolute top-[0rem] right-[0px] bg-red-500 text-white text-sm px-sm py-sm">{badgerabat}</div>}
+      {
+        badgefaapladser == "true" && (
+          <div class="badge absolute top-[402px] right-[0px] bg-[#FFB900] text-white text-sm px-sm py-sm">{badgefaapladser}</div>
+        )
+      }
+    </header>
+    <section class="holdinfo p-[1rem] grow border-b-2 border-blue-700">
+      <h3 class="text-medium @lg:text-large font-semibold mb-sm">{holdnavn}</h3>
+      <div class="flex flex-col @md:flex-row @md:justify-between mb-sm">
+        <div class="venstre grow">
+          <div><span>Tid: <span>{tidspunkt}</span></span></div>
+          <div><span>Alder: <span>{aldersgruppe}</span></span></div>
+          <div><span> Niveau: <span>{niveau}</span></span></div>
+        </div>
+        <div class="hoejre grow">
+          <div><span>Deltagere: <span>{pladserpaaholdet}</span></span></div>
+          <div><span>Lokale: <span>{lokale}</span></span></div>
+        </div>
+      </div>
+      <p class="mb-sm">{holdbeskrivelse}</p>
+    </section>
+    <section class="underviserinfo flex py-[1rem] px-[1rem] items-center justify-center">
+      <div class="">
+        <img src={underviserfoto} alt={underviserfotoalt} class="w-8xl h-6xl object-cover rounded-[50%]" />
+      </div>
+      <div class="flex flex-col ml-sm">
+        <p class="font-bold">{undervisernavn}</p>
+        <p>{underviserinfo}</p>
+      </div>
+    </section>
+  </a>
+</article>
